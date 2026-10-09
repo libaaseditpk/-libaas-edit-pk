@@ -1,81 +1,603 @@
 <!doctype html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Libaas Edit Pk — Thrifted Kurtis</title>
-<meta name="description" content="Libaas Edit Pk — handpicked thrifted kurtis at affordable prices. Nationwide delivery in Pakistan.">
+
+<title>Libaas Edit PK — Thrifted Kurtis</title>
+
+<meta name="description" content="Handpicked thrifted kurtis at affordable prices in Pakistan.">
+
 <style>
-:root{--ink:#2b211d;--muted:#756a64;--cream:#fbf7f1;--rose:#ead7d1;--accent:#9b6f63;--white:#fff}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream)}
-header{position:sticky;top:0;z-index:10;background:rgba(251,247,241,.95);backdrop-filter:blur(10px);border-bottom:1px solid #eadfd8}
-.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800}.brand img{width:48px;height:48px;border-radius:10px;object-fit:contain}
-nav a{color:var(--ink);text-decoration:none;margin-left:22px;font-weight:600}
-.hero{max-width:1100px;margin:auto;padding:70px 20px 45px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
-.badge{display:inline-block;background:var(--rose);padding:8px 13px;border-radius:999px;font-size:13px;font-weight:700}
-h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:18px 0 20px;letter-spacing:-3px}
-.hero p{font-size:18px;line-height:1.65;color:var(--muted);max-width:580px}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.btn{display:inline-block;padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:800}
-.primary{background:var(--ink);color:white}.secondary{border:1px solid #d6c7c0;color:var(--ink);background:white}
-.hero-card{background:white;border-radius:28px;padding:35px;text-align:center;box-shadow:0 15px 45px rgba(60,40,30,.08)}
-.hero-card img{width:min(240px,75%);border-radius:50%}
-.section{max-width:1100px;margin:auto;padding:45px 20px}
-.title{text-align:center;margin-bottom:28px}.title h2{font-size:34px;margin:0 0 8px}.title p{color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.product{background:white;border-radius:20px;overflow:hidden;border:1px solid #eee2dc}
-.placeholder{height:300px;background:linear-gradient(135deg,#f1e5df,#faf7f3);display:flex;align-items:center;justify-content:center;color:#9a8a82;font-weight:700}
-.product-body{padding:18px}.product-body h3{margin:0 0 6px}.price{font-weight:800;color:var(--accent)}
-.note{background:white;border:1px dashed #d7c3ba;padding:20px;border-radius:16px;color:var(--muted);text-align:center}
-footer{background:var(--ink);color:white;padding:35px 20px;margin-top:40px}.foot{max-width:1100px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot a{color:white}
-@media(max-width:750px){.hero{grid-template-columns:1fr;padding-top:45px}.grid{grid-template-columns:1fr 1fr}nav a{margin-left:10px;font-size:14px}.hero-card{display:none}}
-@media(max-width:480px){.grid{grid-template-columns:1fr}h1{letter-spacing:-2px}}
+
+:root {
+
+  --ink: #2b211d;
+
+  --muted: #756a64;
+
+  --cream: #fbf7f1;
+
+  --rose: #ead7d1;
+
+  --accent: #9b6f63;
+
+}
+
+* { box-sizing: border-box; }
+
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  color: var(--ink);
+
+  background: var(--cream);
+
+}
+
+header {
+
+  position: sticky;
+
+  top: 0;
+
+  background: #fbf7f1;
+
+  border-bottom: 1px solid #eadfd8;
+
+  z-index: 5;
+
+}
+
+.nav {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 14px 20px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+.brand { font-size: 20px; font-weight: 800; }
+
+nav a {
+
+  color: var(--ink);
+
+  text-decoration: none;
+
+  margin-left: 12px;
+
+  font-weight: bold;
+
+}
+
+.hero {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 65px 20px;
+
+}
+
+.badge {
+
+  background: var(--rose);
+
+  padding: 9px 14px;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+}
+
+h1 {
+
+  font-size: clamp(42px, 8vw, 72px);
+
+  line-height: 1;
+
+  margin: 24px 0;
+
+}
+
+.hero p {
+
+  color: var(--muted);
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+}
+
+.btn {
+
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  margin: 8px 8px 0 0;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+}
+
+.primary { background: var(--ink); color: white; }
+
+.secondary { background: white; color: var(--ink); }
+
+.section {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 35px 20px;
+
+}
+
+.title { text-align: center; margin-bottom: 28px; }
+
+.title h2 { font-size: 32px; margin-bottom: 8px; }
+
+.title p { color: var(--muted); }
+
+.grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+
+}
+
+.product {
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  border: 1px solid #eee2dc;
+
+}
+
+.product img {
+
+  width: 100%;
+
+  height: 300px;
+
+  object-fit: contain;
+
+  background: #f5eee8;
+
+}
+
+.product-body { padding: 16px; }
+
+.product-body h3 { margin: 0 0 10px; }
+
+.price { color: var(--accent); font-weight: 800; }
+
+.description {
+
+  color: var(--muted);
+
+  line-height: 1.5;
+
+  margin: 12px 0;
+
+  overflow-wrap: anywhere;
+
+}
+
+.order {
+
+  display: inline-block;
+
+  padding: 10px 14px;
+
+  border-radius: 9px;
+
+  background: var(--ink);
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+}
+
+.note {
+
+  text-align: center;
+
+  padding: 22px;
+
+  background: white;
+
+  border-radius: 14px;
+
+  color: var(--muted);
+
+}
+
+footer {
+
+  margin-top: 40px;
+
+  padding: 30px 20px;
+
+  background: var(--ink);
+
+  color: white;
+
+  text-align: center;
+
+}
+
+@media(max-width: 650px) {
+
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .product img { height: 220px; }
+
+  nav a { margin-left: 6px; font-size: 13px; }
+
+  .brand { font-size: 17px; }
+
+}
+
+@media(max-width: 420px) {
+
+  .grid { grid-template-columns: 1fr; }
+
+  .product img { height: 320px; }
+
+}
+
 </style>
+
 </head>
+
 <body>
+
 <header>
+
   <div class="nav">
-    <div class="brand"><img src="logo.jpg" alt="Libaas Edit Pk logo"><span>Libaas Edit Pk</span></div>
-    <nav><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+
+    <div class="brand">🌸 Libaas Edit PK</div>
+
+    <nav>
+
+      <a href="#shop">Shop</a>
+
+      <a href="#about">About</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
   </div>
+
 </header>
 
 <main>
+
 <section class="hero">
-  <div>
-    <span class="badge">✨ Handpicked thrifted kurtis</span>
-    <h1>Pretty pieces.<br>Affordable prices.</h1>
-    <p>Unique thrifted kurtis, handpicked with love. Discover one-of-a-kind pieces and order easily on WhatsApp. Nationwide delivery across Pakistan.</p>
-    <div class="buttons">
-      <a class="btn primary" href="https://wa.me/923292373632?text=Assalam-o-Alaikum%20Libaas%20Edit%20Pk%2C%20I%27d%20like%20to%20see%20available%20kurtis." target="_blank">Order on WhatsApp</a>
-      <a class="btn secondary" href="#shop">View Collection</a>
-    </div>
-  </div>
-  <div class="hero-card"><img src="logo.jpg" alt="Libaas Edit Pk"></div>
+
+  <span class="badge">✨ Handpicked thrifted kurtis</span>
+
+  <h1>Pretty pieces.<br>Affordable prices.</h1>
+
+  <p>
+
+    Unique thrifted kurtis, handpicked with love.
+
+    Discover beautiful pieces and order easily on WhatsApp.
+
+    Nationwide delivery across Pakistan.
+
+  </p>
+
+  <a class="btn primary"
+
+     href="https://wa.me/923292373632"
+
+     target="_blank" rel="noopener">
+
+    Order on WhatsApp
+
+  </a>
+
+  <a class="btn secondary" href="#shop">View Collection</a>
+
 </section>
 
 <section class="section" id="shop">
-  <div class="title"><h2>Latest Kurtis</h2><p>New pieces will be added here as they arrive.</p></div>
-  <div class="grid">
-    <article class="product"><div class="placeholder">Kurti Photo Coming Soon</div><div class="product-body"><h3>Thrift Kurti #01</h3><div class="price">Price — DM / WhatsApp</div></div></article>
-    <article class="product"><div class="placeholder">Kurti Photo Coming Soon</div><div class="product-body"><h3>Thrift Kurti #02</h3><div class="price">Price — DM / WhatsApp</div></div></article>
-    <article class="product"><div class="placeholder">Kurti Photo Coming Soon</div><div class="product-body"><h3>Thrift Kurti #03</h3><div class="price">Price — DM / WhatsApp</div></div></article>
+
+  <div class="title">
+
+    <h2>Latest Kurtis</h2>
+
+    <p>Shop our available collection.</p>
+
   </div>
-  <div class="note" style="margin-top:18px">📸 Product photos and prices can be added whenever your kurtis are ready.</div>
+
+  <div id="products" class="grid">
+
+    <div class="note">Loading products...</div>
+
+  </div>
+
+  <p id="status" class="note" style="margin-top:18px">
+
+    Products are loading. Please wait.
+
+  </p>
+
 </section>
 
 <section class="section" id="about">
-  <div class="title"><h2>About Libaas Edit Pk</h2></div>
-  <div class="note">🌸 Unique pieces • Affordable prices<br>📦 All over Pakistan Delivery<br>❤️ DM or WhatsApp to Order</div>
+
+  <div class="title"><h2>About Libaas Edit PK</h2></div>
+
+  <div class="note">
+
+    🌸 Unique pieces • Affordable prices<br>
+
+    📦 Delivery all over Pakistan<br>
+
+    ❤️ Handpicked with love
+
+  </div>
+
 </section>
 
 <section class="section" id="contact">
-  <div class="title"><h2>Ready to order?</h2><p>Message us on WhatsApp for availability, size and delivery details.</p></div>
-  <div style="text-align:center"><a class="btn primary" href="https://wa.me/923292373632" target="_blank">Chat on WhatsApp</a></div>
+
+  <div class="title">
+
+    <h2>Ready to order?</h2>
+
+    <p>Contact us for availability and delivery details.</p>
+
+  </div>
+
+  <div style="text-align:center">
+
+    <a class="btn primary"
+
+       href="https://wa.me/923292373632"
+
+       target="_blank" rel="noopener">
+
+      Chat on WhatsApp
+
+    </a>
+
+  </div>
+
 </section>
+
 </main>
 
-<footer><div class="foot"><div><strong>Libaas Edit Pk</strong><br><span>Thrifted Kurtis | Handpicked with Love</span></div><div>🇵🇰 Nationwide Delivery • <a href="https://wa.me/923292373632" target="_blank">WhatsApp</a></div></div></footer>
+<footer>
+
+  <strong>Libaas Edit PK</strong><br>
+
+  Thrifted Kurtis | Handpicked with Love<br><br>
+
+  🇵🇰 Nationwide Delivery
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+
+const SUPABASE_URL = "PASTE_YOUR_SUPABASE_PROJECT_URL_HERE";
+
+const SUPABASE_KEY =
+
+  "sb_publishable_XyjeKSmO_G2-PlhMrD5jfkg_ivCkc0K5";
+
+const productsBox = document.getElementById("products");
+
+const statusBox = document.getElementById("status");
+
+function addText(parent, tag, text, className) {
+
+  const element = document.createElement(tag);
+
+  element.textContent = text || "";
+
+  if (className) element.className = className;
+
+  parent.appendChild(element);
+
+  return element;
+
+}
+
+async function loadProducts() {
+
+  try {
+
+    if (SUPABASE_URL.includes("PASTE_YOUR")) {
+
+      throw new Error("Supabase Project URL abhi add nahi hua.");
+
+    }
+
+    const client = window.supabase.createClient(
+
+      SUPABASE_URL,
+
+      SUPABASE_KEY
+
+    );
+
+    const { data, error } = await client
+
+      .from("Products")
+
+      .select("id, product_name, price, description, image_url, created_at")
+
+      .order("created_at", { ascending: false });
+
+    if (error) throw error;
+
+    productsBox.replaceChildren();
+
+    if (!data || data.length === 0) {
+
+      statusBox.textContent = "Abhi koi product available nahi hai.";
+
+      return;
+
+    }
+
+    data.forEach(product => {
+
+      const card = document.createElement("article");
+
+      card.className = "product";
+
+      if (product.image_url) {
+
+        const img = document.createElement("img");
+
+        img.src = product.image_url;
+
+        img.alt = product.product_name || "Libaas Edit PK product";
+
+        img.loading = "lazy";
+
+        img.onerror = () => {
+
+          img.alt = "Product image load nahi hui";
+
+        };
+
+        card.appendChild(img);
+
+      }
+
+      const body = document.createElement("div");
+
+      body.className = "product-body";
+
+      addText(body, "h3", product.product_name || "Kurti");
+
+      const price = Number(product.price);
+
+      addText(
+
+        body,
+
+        "div",
+
+        product.price !== null && product.price !== ""
+
+          && Number.isFinite(price)
+
+          ? "Rs. " + price.toLocaleString("en-PK")
+
+          : "Price on request",
+
+        "price"
+
+      );
+
+      if (product.description) {
+
+        addText(body, "p", product.description, "description");
+
+      }
+
+      const order = document.createElement("a");
+
+      order.className = "order";
+
+      order.textContent = "Order on WhatsApp";
+
+      order.href =
+
+        "https://wa.me/923292373632?text=" +
+
+        encodeURIComponent(
+
+          "Assalam-o-Alaikum, I want to order: " +
+
+          (product.product_name || "Kurti") +
+
+          (product.price != null ? " - Rs. " + product.price : "")
+
+        );
+
+      order.target = "_blank";
+
+      order.rel = "noopener";
+
+      body.appendChild(order);
+
+      card.appendChild(body);
+
+      productsBox.appendChild(card);
+
+    });
+
+    statusBox.textContent = "Collection updated successfully.";
+
+  } catch (error) {
+
+    console.error("Product loading error:", error);
+
+    productsBox.replaceChildren();
+
+    statusBox.textContent =
+
+      "Products load nahi huay. Supabase URL, table name aur read permissions check karein.";
+
+  }
+
+}
+
+loadProducts();
+
+</script>
+
 </body>
+
 </html>
